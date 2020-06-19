@@ -10,4 +10,7 @@ export = (app: Application) => {
 
   // To get your app running against GitHub, see:
   // https://probot.github.io/docs/development/
+  app.on('issue_comment.created', async (ctx) => {
+    console.log(ctx.payload.comment.user)
+  })
 }

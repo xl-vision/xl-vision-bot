@@ -15,8 +15,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "build:watch": "tsc && (tsc -w --preserveWatchOutput & nodemon)",
-    "dev": "npm run build:watch",
+    "dev": "npm run build && nodemon",
     "start": "probot run ./lib/index.js",
     "lint": "standard **/*.ts --fix",
     "test": "jest && standard **/*.ts",
